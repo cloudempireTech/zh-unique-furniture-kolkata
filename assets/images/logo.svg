@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae8b2" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#aa8018" />
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14293d" />
+      <stop offset="100%" stop-color="#0a1522" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ring Base -->
+  <circle cx="250" cy="250" r="235" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="6" />
+  <circle cx="250" cy="250" r="218" fill="none" stroke="rgba(212, 175, 55, 0.45)" stroke-width="2" stroke-dasharray="6,4" />
+
+  <!-- Architectural Crown / Crest Motif -->
+  <path d="M 220 120 L 250 95 L 280 120 L 265 125 L 250 110 L 235 125 Z" fill="url(#goldGrad)" />
+  <circle cx="250" cy="85" r="5" fill="url(#goldGrad)" />
+
+  <!-- Monogram ZH Interlocking -->
+  <!-- Letter Z -->
+  <path d="M 175 165 L 235 165 L 235 185 L 195 245 L 235 245 L 235 265 L 170 265 L 170 245 L 210 185 L 175 185 Z" fill="url(#goldGrad)" filter="url(#subtleGlow)" />
+  <!-- Letter H Intersecting -->
+  <path d="M 265 165 L 285 165 L 285 205 L 325 205 L 325 165 L 345 165 L 345 265 L 325 265 L 325 225 L 285 225 L 285 265 L 265 265 Z" fill="url(#goldGrad)" filter="url(#subtleGlow)" />
+
+  <!-- Center Bridge Accent -->
+  <rect x="228" y="210" width="44" height="6" rx="3" fill="#ffffff" opacity="0.9" />
+
+  <!-- Sofa / Seating Contour Silhouette Arc -->
+  <path d="M 140 295 C 190 280, 310 280, 360 295 C 375 300, 375 315, 360 320 C 310 330, 190 330, 140 320 C 125 315, 125 300, 140 295 Z" fill="none" stroke="url(#goldGrad)" stroke-width="4" />
+  <path d="M 160 305 C 200 298, 300 298, 340 305" fill="none" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" />
+
+  <!-- Brand Typography -->
+  <text x="250" y="375" text-anchor="middle" font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" font-size="30" font-weight="700" fill="url(#goldGrad)" letter-spacing="6">ZH UNIQUE</text>
+  <text x="250" y="405" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="13" font-weight="600" fill="#f5e6b8" letter-spacing="4">LUXURY FURNITURE &#8226; TOPSIA</text>
+  <text x="250" y="425" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="10" font-weight="500" fill="rgba(245, 230, 184, 0.75)" letter-spacing="2">KOLKATA</text>
+
+  <!-- Star accents -->
+  <polygon points="120,370 123,376 130,377 125,382 126,388 120,385 114,388 115,382 110,377 117,376" fill="url(#goldGrad)" />
+  <polygon points="380,370 383,376 390,377 385,382 386,388 380,385 374,388 375,382 370,377 377,376" fill="url(#goldGrad)" />
+</svg>
